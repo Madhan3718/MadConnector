@@ -1,0 +1,6 @@
+{
+    "mongoURI":"mongodb+srv://madan:Madhan3718@madconnect.hc1geey.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "githubClientId":"a34fe554dfbd824f80cf",
+    "githubSecret":"1e000f215b7c22b688d0d74aea5ea87e70efb3eb"
+}
