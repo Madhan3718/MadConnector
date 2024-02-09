@@ -287,7 +287,7 @@ router.delete('/education/:edu_id', auth, async (req, res) => {
    
     //Get remove index
     const removeIndex= profile.education.map(item =>item.id).indexOf(req.params.edu_id );
-    profile.education.splice(removeIndex,1);
+    educationprofile.splice(removeIndex,1);
 
     await profile.save();
     res.json(profile);
