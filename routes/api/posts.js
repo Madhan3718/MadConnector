@@ -118,7 +118,7 @@ router.delete('/:id',auth, async (req, res) => {
         return res.status(401).json({ msg: 'User not authorized' });
       }
   
-      await post.remove();
+      await post.save();
   
       res.json({ msg: 'Post removed' });
     } catch (err) {
@@ -132,7 +132,7 @@ router.delete('/:id',auth, async (req, res) => {
 
 
 
-  // @route    PUT api/posts/unlike/:id
+// @route    PUT api/posts/unlike/:id
 // @desc     UnLike a post
 // @access   Private
 router.put('/unlike/:id', auth, async (req, res) => {
